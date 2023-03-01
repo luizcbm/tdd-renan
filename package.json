@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "jest": "^29.4.2",
+    "jest-junit": "^15.0.0"
+  },
+  "name": "tdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest test/operacao.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
