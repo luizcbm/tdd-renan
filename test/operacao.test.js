@@ -56,14 +56,14 @@ describe('Teste da calculadora', () => {
       resultado = () => calculadora.div(2, 0);
       expect(resultado).toThrow('Erro');
 
-      resultado = calculadora.div("a", "a");
+      resultado = () => calculadora.div("a", "a");
       expect(resultado).toThrow('Erro');
 
       resultado = calculadora.div(2.2, 2);
-      expect(resultado).toEqual(4.4);
+      expect(resultado).toEqual(1.1);
 
       resultado = calculadora.div(3, 3.4);
-      expect(resultado).toEqual(10,2);
+      expect(resultado).toEqual(0.8823529411764706);
    })
    //--MULTIPLICAÇÃO--
   it("Operacao Multiplicação", () => {
